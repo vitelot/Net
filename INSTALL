@@ -1,0 +1,24 @@
+Basic Installation
+==================
+
+just run 'gmake' (you must have 'gmake', simple 'make' may not work)
+
+if you DO NOT have the Gnu Scientific Libraries (GSL) installed on your machine,
+you can still compile the program, but FULL spectral calculations will 
+be off.
+In this case you MUST comment out the first line in file 'sources/Makefile'.
+
+If you do not have LAPACK and BLAS installed comment out the second line in file
+'sources/Makefile'
+
+Change the third line of file 'sources/Makefile' accordingly
+
+[
+  Are you joking? You do not know how to comment code lines? :-O
+  Well, in C you have to embed the line to be commented with "/*" and "*/", 
+    eg. /* LINE TO COMMENT */; Alternatively some compilers 
+    accept the c++ commenting style, then
+    simply append "//" at the beginning of the line;
+  in perl and in makefiles, put the "#" symbol at the beginning of the line.
+]
+

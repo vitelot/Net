@@ -1,0 +1,16 @@
+#! /bin/sh
+SRCDIR=sources
+OBJDIR=objs
+BINDIR=bin 
+if [ ! -d $BINDIR ]; then
+	mkdir $BINDIR
+fi
+if [ ! -d $OBJDIR ]; then
+	mkdir $OBJDIR
+fi
+if [ ! -e ./bin/TAS_parser.pl ]; then
+	ln -s ../sources/TAS_parser.pl ./bin/TAS_parser.pl
+fi
+if [ ! -e ./bin/TAS_shuffler.pl ]; then
+	ln -s ../sources/TAS_shuffler.pl ./bin/TAS_shuffler.pl
+fi

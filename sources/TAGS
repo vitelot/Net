@@ -1,0 +1,254 @@
+AMatrixStuff	AMatrix.c	/^void AMatrixStuff(NODE * node, Int NK)$/
+AddOneWayLink	NodeLinks.c	/^void AddOneWayLink( NODE *nfrom, NODE *nto, Real w/
+AddTwoWayLink	NodeLinks.c	/^void AddTwoWayLink( NODE *node1, NODE *node2, Real/
+AllocError	Error.c	/^void AllocError( char *s)$/
+Analyze	Analyze.c	/^void Analyze( NODE *node, Int NK)$/
+AreNeighbors	Node.c	/^Bool AreNeighbors( NODE *n1, NODE *n2)$/
+AssignLinks	AssignLinks.c	/^void AssignLinks( NODE *node, Int NK)$/
+BCEprint	EdgeBetweenness.c	/^static void BCEprint( struct EDGE *edge, Int TE, R/
+BCprint	RWSiteBetweenness.c	/^static void BCprint( NODE *node, Int NK, Real *BCi/
+BarabasiAlbert	BA.c	/^void BarabasiAlbert( NODE *node, Int NK)$/
+Bool	main.h	/^typedef enum {FALSE, TRUE} Bool;$/
+BoundedPowerDistribution	RandomDistributions.c	/^Real BoundedPowerDistribution( Real a, Real xmin, /
+BuildNet	GeoNet.c	/^static void BuildNet(NODE *node, struct Circle *ci/
+CenteredExponentialDistribution	RandomDistributions.c	/^Real CenteredExponentialDistribution( Real a, Real/
+Circle	GeoNet.c	/^struct Circle {$/
+CloseError	Error.c	/^void CloseError(void)$/
+ClusterCoeff	ClusterCoeff.c	/^void ClusterCoeff( NODE *node, Int NK)$/
+ClusterCoeff2NN	ClusterCoeff2NN.c	/^void ClusterCoeff2NN( NODE *node, Int NK)$/
+ClusterCoeff2NNstar	ClusterCoeff2NNs.c	/^void ClusterCoeff2NNstar( NODE *node, Int NK)$/
+ClusterFind	ConnectedComponents.c	/^static void ClusterFind( NODE *node, Int * CS, Int/
+ClusterSave	ConnectedComponents.c	/^static void ClusterSave( NODE *node, Int NK, Int */
+Communities	Communities.c	/^void Communities( NODE *node, Int NK)$/
+ConnectedComponents	ConnectedComponents.c	/^void ConnectedComponents( NODE *node, Int NK)$/
+CountCommunities	Communities.c	/^static Int CountCommunities( NODE *node, Int NK, I/
+CreateA	AMatrix.c	/^static gsl_matrix * CreateA(NODE * node, Int NK)$/
+CreateL0	RWSiteBetweenness.c	/^static gsl_matrix * CreateL0(NODE * node, Int NK) /
+CreateLzINI	Lanczos.c	/^static void CreateLzINI( char ini[128])$/
+Create_Rewiring_INI	Rewiring.c	/^static void Create_Rewiring_INI( char ini[128])$/
+Criterium1	GeoNet.c	/^static void Criterium1(NODE *ni, NODE *nj, $/
+Criterium2	GeoNet.c	/^static void Criterium2(NODE *ni, NODE *nj, $/
+DDExx	PlacePoints.c	/^static float DDExx(int m, Point *P, NODE *node, In/
+DDExy	PlacePoints.c	/^static float DDExy(int m, Point *P, NODE *node, In/
+DDEyy	PlacePoints.c	/^static float DDEyy(int m, Point *P, NODE *node, In/
+DFS	DFS.c	/^void DFS(NODE *node, Int NK) {$/
+DegreeDistribution	DegreeDistrib.c	/^void DegreeDistribution( NODE *node, Int NK)$/
+DirKnn	NeighConnect.c	/^static void DirKnn( NODE *node, Int NK)$/
+DirectedDD	DegreeDistrib.c	/^static void DirectedDD( NODE *node, Int NK)$/
+DisconnectNode	NodeLinks.c	/^void DisconnectNode( NODE *node, NODE *n)$/
+DisplayNet	DisplayNet.c	/^void DisplayNet( NODE *node, Int NK)$/
+Distance	PlacePoints.c	/^static float Distance(Point *p, Point *q) {$/
+DistanceDistrib	DistanceDistrib.c	/^void DistanceDistrib( Int s, Int *d, Int NK)$/
+Dots	Dots.c	/^void Dots(const char c, int i, int step)$/
+DrawGraph	DrawGraph.c	/^void DrawGraph( NODE *node, Int NK) {$/
+EDGE	EdgeBetweenness.c	/^struct EDGE {$/
+EdgeBetwAlgorithm	Communities.c	/^static Int EdgeBetwAlgorithm(NODE * node, Int NK)$/
+EdgeBetweenness	EdgeBetweenness.c	/^Int EdgeBetweenness( NODE *node, Int NK)$/
+ExponentialDistribution	RandomDistributions.c	/^Real ExponentialDistribution( Real r, Real b)$/
+Field	main.h	/^typedef enum {INT, REAL} Field;$/
+FileOpenError	Error.c	/^void FileOpenError( char *s)$/
+FindBCEMax	EdgeBetweenness.c	/^static Int FindBCEMax(struct EDGE *edge, Int TE, R/
+FindCommunitySize	Communities.c	/^static Int FindCommunitySize(NODE * node, Int NK, /
+FindMaxMinIndex	ReadIn.c	/^static Int FindMaxMinIndex( FILE *in)$/
+FreeA	AMatrix.c	/^static void FreeA(gsl_matrix * A)$/
+FreeSpace	GeoNet.c	/^static Real FreeSpace(struct Circle *circle, Int N/
+Function	MinimumGrowth.c	/^static Real Function( Real x, Real y) {return (x*y/
+GaussianDistribution	RandomDistributions.c	/^Real GaussianDistribution( Real s, Real m)$/
+Generator	main.h	/^enum Generator { FITNESS, BA, MINIMUM_GROWTH, GEO_/
+GeoNet	GeoNet.c	/^void GeoNet( NODE *node, Int NK)$/
+GeoNetRadiusDistr	main.h	/^enum GeoNetRadiusDistr { RADIUS, RADII, RUNIF, RCE/
+GetMaxDistance	SiteBetwenness.c	/^static void GetMaxDistance( Int from, struct MD *M/
+GetNodeDegree	Node.c	/^Int GetNodeDegree( NODE *Node)$/
+GetNodeInDegree	Node.c	/^Int GetNodeInDegree( NODE *Node)$/
+GetNodeIndex	Node.c	/^Int GetNodeIndex( NODE *Node)$/
+GetNodeOutDegree	Node.c	/^Int GetNodeOutDegree( NODE *Node)$/
+GetRadius	GeoNet.c	/^static Real GetRadius(void) {$/
+GetRandom	GetRandom.c	/^Real GetRandom( enum RndDistrib RDType, Real a, Re/
+GetValue	Lanczos.c	/^static double GetValue( NODE *ni, NODE *nj)$/
+GradE	PlacePoints.c	/^static void GradE(P2D *grad, int m, Point *P, NODE/
+HaveCommonNeighbor	Node.c	/^Bool HaveCommonNeighbor( NODE *n1, NODE *n2, Int N/
+InDegreeDistrib	DegreeDistrib.c	/^static void InDegreeDistrib(NODE *node, Int NK)$/
+InKnn	NeighConnect.c	/^static void InKnn( NODE *node, Int NK)$/
+InitMaxDistance	SiteBetwenness.c	/^static void InitMaxDistance( struct MD *MaxDistanc/
+InitPoints	DrawGraph.c	/^static void InitPoints( Point *P, NODE *node, Int /
+Input	main.h	/^struct Input {$/
+InputParameters	Input.c	/^void InputParameters( char *ini_file)$/
+Int	main.h	/^typedef int   Int ; \/* Change   int to what you w/
+IntList	main.h	/^struct IntList {$/
+IntListAppend	IntList.c	/^void IntListAppend( LIST * list, Int value)$/
+IntListAppendList	IntList.c	/^void IntListAppendList( LIST * L1, LIST * L2)$/
+IntListEmpty	IntList.c	/^void IntListEmpty( LIST * list)$/
+IntListSize	IntList.c	/^Int IntListSize( LIST * list)$/
+IntQueue	main.h	/^struct IntQueue {$/
+IntStack	main.h	/^struct IntStack {$/
+IntVectorAlloc	IntVector.c	/^Int *IntVectorAlloc( int dim)$/
+IntVectorCopy	IntVector.c	/^void IntVectorCopy( Int *a, Int *b, int dim)$/
+IntVectorFree	IntVector.c	/^void IntVectorFree( Int *v)$/
+IntVectorInit	IntVector.c	/^void IntVectorInit( Int *v, Int dim, Int value)$/
+IntVectorIntersect	IntVector.c	/^Int IntVectorIntersect( Int *a, int dima, Int *b, /
+IntVectorRealloc	IntVector.c	/^Int *IntVectorRealloc( Int *v, int newdim)$/
+IsConnected	ConnectedComponents.c	/^Bool IsConnected( NODE *node, Int NK)$/
+LIST	main.h	/^typedef struct IntList LIST;$/
+Lanczos	Lanczos.c	/^void Lanczos(NODE *node, Int NK)$/
+LinkPresent	NodeLinks.c	/^Bool LinkPresent(NODE *node1, NODE *node2) \/* doe/
+LinkProbability	LinkProbability.c	/^Real LinkProbability( Real x, Real y, Real Z, Real/
+ListAlloc	IntList.c	/^LIST * ListAlloc( Int dim)$/
+ListEmpty	IntList.c	/^void ListEmpty(  LIST *l, Int NK)$/
+ListFree	IntList.c	/^void ListFree( LIST *v, Int NK)$/
+ListInit	IntList.c	/^void ListInit(  LIST *l, Int NK)$/
+ListNet	DisplayNet.c	/^static void ListNet( NODE *node, Int NK)$/
+Loop	main.h	/^#define Loop(i,N) for( (i)=0; (i)<(N); ++(i))$/
+MD	SiteBetwenness.c	/^struct MD {$/
+MemoryBarabasiAlbert	BA.c	/^static void MemoryBarabasiAlbert( NODE *node, Int /
+MemoryGetOldNode	BA.c	/^static Int MemoryGetOldNode(Int *pool, Real *prob,/
+MemoryKernel	BA.c	/^static Real MemoryKernel(int t) {$/
+MinList	MinimumGrowth.c	/^struct MinList { Real value; Int from; Int to; };$/
+MinimumGrowth	MinimumGrowth.c	/^void MinimumGrowth( NODE *node, Int NK)$/
+Mmain	main.c	/^int main( int argc, char *argv[])$/
+MovePoint	PlacePoints.c	/^static void MovePoint(int m, Point *P, NODE *node,/
+MultiStatistics	MultiStats.c	/^void MultiStatistics(Int NK)$/
+NODE	main.h	/^typedef struct sNode NODE;$/
+NeighConnect	NeighConnect.c	/^void NeighConnect( NODE *node, Int NK)$/
+NodeAlloc	Node.c	/^NODE *NodeAlloc( int dim)$/
+NodeDFS	DFS.c	/^static void NodeDFS(NODE *node, Int idx) {$/
+NodeFree	Node.c	/^void NodeFree( NODE *v, Int NK)$/
+NodeInit	Node.c	/^void NodeInit(  NODE *node, Int NK)$/
+NodeInitFitnesses	InitFitnesses.c	/^void NodeInitFitnesses( NODE *node, Int NK, enum R/
+NodeIntersect	Node.c	/^Int NodeIntersect( NODE *k1, NODE *k2)$/
+NodeRealloc	Node.c	/^NODE *NodeRealloc( NODE *node, int dim)$/
+NodeSCC	SCC.c	/^static void NodeSCC(NODE *node, Int v)$/
+OneIn_AllOut	RWSiteBetweenness.c	/^static void OneIn_AllOut(NODE *node, Int NK, Real /
+OneIn_OneOut	RWSiteBetweenness.c	/^static void OneIn_OneOut(NODE *node, Int NK, Real /
+OpenError	Error.c	/^void OpenError(char *errfilename)$/
+OutDegreeDistrib	DegreeDistrib.c	/^static void OutDegreeDistrib(NODE *node, Int NK)$/
+OutKnn	NeighConnect.c	/^static void OutKnn( NODE *node, Int NK)$/
+P2D	PlacePoints.c	/^} P2D;$/
+PairRewiring	Rewiring.c	/^static void PairRewiring(NODE *x, NODE *lx, NODE */
+PlacePoints	PlacePoints.c	/^void PlacePoints( Point *P, NODE *node, Int NK) {$/
+Point	DrawGraph.c	/^} Point; \/* point in the plane *\/$/
+PositionFromIndex	Node.c	/^Int PositionFromIndex( NODE *node, Int NK, Int ind/
+PowerDistribution	RandomDistributions.c	/^Real PowerDistribution( Real a, Real xmin)$/
+PrintCluster	ConnectedComponents.c	/^static void PrintCluster( Int *CS, Int NK)$/
+PrintDat	PrintDat.c	/^void PrintDat( NODE *node, Int NK)$/
+PrintDiNet	DisplayNet.c	/^static void PrintDiNet( NODE *node, Int NK)$/
+PrintEPS	DrawGraph.c	/^static void PrintEPS( Point *P, NODE *node, Int NK/
+PrintEPSLinks	DrawGraph.c	/^static void PrintEPSLinks(FILE *eps, Point *P, NOD/
+PrintEPSNodes	DrawGraph.c	/^static void PrintEPSNodes(FILE *eps, Point *P, Int/
+PrintEPSPreamble	DrawGraph.c	/^static void PrintEPSPreamble(FILE *eps, Point *P, /
+PrintGML	DisplayNet.c	/^static void PrintGML( NODE *node, Int NK)$/
+PrintLinkType	Input.c	/^static void PrintLinkType(void)$/
+PrintNet	DisplayNet.c	/^static void PrintNet( NODE *node, Int NK)$/
+PrintShortHelp	CommandLine.c	/^static void PrintShortHelp(void)$/
+QUEUE	main.h	/^typedef struct IntQueue QUEUE;$/
+QueueEmpty	IntQueue.c	/^void QueueEmpty( QUEUE *q)$/
+QueueInit	IntQueue.c	/^void QueueInit( QUEUE *q)$/
+QueueSize	IntQueue.c	/^Int QueueSize( QUEUE *q)$/
+RWSiteBetweenness	RWSiteBetweenness.c	/^void RWSiteBetweenness(NODE * node, Int NK)$/
+RandomInit	RandomInit.c	/^void RandomInit( long *Seed)$/
+RandomSteps	TASRandomWalk.c	/^static Int RandomSteps(void) {$/
+ReadIn	ReadIn.c	/^NODE * ReadIn( NODE *node, Int *NK)$/
+ReadNodeFitness	Node.c	/^Real ReadNodeFitness( NODE *Node)$/
+Real	main.h	/^typedef double Real; \/* Change float to what you /
+RealVectorAlloc	RealVector.c	/^Real *RealVectorAlloc( int dim)$/
+RealVectorCopy	RealVector.c	/^void RealVectorCopy( Real *a, Real *b, int dim)$/
+RealVectorFree	RealVector.c	/^void RealVectorFree( Real *v)$/
+RealVectorInit	RealVector.c	/^void RealVectorInit( Real *v, Int dim, Real value)/
+RealVectorRealloc	RealVector.c	/^Real *RealVectorRealloc( Real *v, int newdim)$/
+Reduction	Reduction.c	/^void Reduction(NODE *node, Int NK)$/
+RemoveLink	NodeLinks.c	/^void RemoveLink( NODE *nfrom, NODE *nto)$/
+RemoveTwoWayLink	NodeLinks.c	/^void RemoveTwoWayLink( NODE *n1, NODE *n2)$/
+Rewiring	Rewiring.c	/^void Rewiring(NODE *node, Int NK) $/
+RewiringStep	Rewiring.c	/^static void RewiringStep(NODE *node, Int NK)$/
+RndDistrib	main.h	/^enum RndDistrib { UNIF, EXP, GAUSS, POWER, USER };/
+RunXmgrace	RunXmgrace.c	/^void RunXmgrace(void *VectorX, void *VectorY, $/
+SCC	SCC.c	/^void SCC(NODE *node, Int NK) {$/
+STACK	main.h	/^typedef struct IntStack STACK;$/
+SWAP	sort2.c	/^#define SWAP(a,b) temp=(a);(a)=(b);(b)=temp;$/
+ScanCommandLineParams	CommandLine.c	/^void ScanCommandLineParams( int argc, char *argv[]/
+SetNodeDegree	Node.c	/^void SetNodeDegree( NODE *Node, Int x)$/
+SetNodeFitness	Node.c	/^void SetNodeFitness( NODE *Node, Real x)$/
+SetNodeInDegree	Node.c	/^void SetNodeInDegree( NODE *Node, Int x)$/
+SetNodeIndex	Node.c	/^void SetNodeIndex( NODE *Node, Int x)$/
+SetNodeOutDegree	Node.c	/^void SetNodeOutDegree( NODE *Node, Int x)$/
+ShowProgress	ShowProgress.c	/^void ShowProgress(float fraction, float total) {$/
+SiteBetweenness	SiteBetwenness.c	/^void SiteBetweenness( NODE *node, Int NK)$/
+SiteBetweenness_local	Reduction.c	/^static void SiteBetweenness_local( NODE *node, Rea/
+SiteTraffic	SiteTraffic.c	/^void SiteTraffic( NODE *node, Int NK)$/
+SpringCharge	PlacePoints.c	/^static void SpringCharge( Point *P, NODE *node, In/
+StackEmpty	IntStack.c	/^void StackEmpty( STACK *stack)$/
+StackInit	IntStack.c	/^void StackInit( STACK *stack)$/
+StackPop	IntStack.c	/^Int StackPop( STACK *stack)$/
+StackPush	IntStack.c	/^void StackPush( STACK *stack, Int value)$/
+StackSize	IntStack.c	/^Int StackSize( STACK *stack)$/
+StatClusterCoeff	MultiStats.c	/^static void StatClusterCoeff(Int NK)$/
+StatClusterCoeff2NN	MultiStats.c	/^static void StatClusterCoeff2NN(Int NK)$/
+StatClusterCoeff2NNstar	MultiStats.c	/^static void StatClusterCoeff2NNstar(Int NK)$/
+StatClusterSize	MultiStats.c	/^static void StatClusterSize(Int NK)$/
+StatDegree	MultiStats.c	/^static void StatDegree(Int NK)$/
+StatNeighConnect	MultiStats.c	/^static void StatNeighConnect(Int NK)$/
+StatSCCSize	MultiStats.c	/^static void StatSCCSize(Int NK)$/
+StatSiteBetweenness	MultiStats.c	/^static void StatSiteBetweenness(Int NK)$/
+TASRandomWalk	TASRandomWalk.c	/^void TASRandomWalk( NODE *node, Int NK)$/
+THETA	LinkProbability.c	/^#define THETA(x) ((x)>=0?1:0)$/
+Theta1	LinkProbability.c	/^static Real Theta1( Real x, Real y, Real m, Real Z/
+Theta2	LinkProbability.c	/^static Real Theta2( Real x, Real y, Real m, Real Z/
+Timer	Timer.c	/^double Timer(void)$/
+UndirKnn	NeighConnect.c	/^static void UndirKnn( NODE *node, Int NK)$/
+UndirectedDD	DegreeDistrib.c	/^static void UndirectedDD( NODE *node, Int NK)$/
+UniformDistribution	RandomDistributions.c	/^Real UniformDistribution( Real min, Real max)$/
+User1	LinkProbability.c	/^static Real User1( Real x, Real y, Real m, Real Z,/
+User2	LinkProbability.c	/^static Real User2( Real x, Real y, Real m, Real Z,/
+User3	LinkProbability.c	/^static Real User3( Real x, Real y, Real m, Real Z,/
+UserDistribution	RandomDistributions.c	/^Real UserDistribution( Real a, Real xmin) {$/
+WUndirKnn	NeighConnect.c	/^static void WUndirKnn( NODE *node, Int NK)$/
+WUndirectedDD	DegreeDistrib.c	/^static void WUndirectedDD( NODE *node, Int NK)$/
+Weight	AssignLinks.c	/^static Real Weight(Real x1, Real x2) { return sqrt/
+XY	LinkProbability.c	/^static Real XY( Real x, Real y, Real m, Real Z, Re/
+check_parameters	las1.c	/^long check_parameters(long maxprs, long lanmax, lo/
+create_ini	Input.c	/^static void create_ini( char *file)$/
+datx	las1.c	/^void datx(long n,double da,double *dx,long incx,do/
+daxpy	las1.c	/^void daxpy (long n,double da,double *dx,long incx,/
+dcopy	las1.c	/^void dcopy(long n,double *dx,long incx,double *dy,/
+ddot	las1.c	/^double ddot(long n,double *dx,long incx,double *dy/
+deQueue	IntQueue.c	/^Int deQueue( QUEUE *queue)$/
+dmax	las1.c	/^double dmax(double a, double b)$/
+dmin	las1.c	/^double dmin(double a, double b)$/
+dscal	las1.c	/^void dscal(long n,double da,double *dx,long incx)$/
+dsort2	las1.c	/^void dsort2(long igap,long n,double *array1,double/
+dswap	las1.c	/^void dswap(long n,double *dx,long incx,double *dy,/
+enQueue	IntQueue.c	/^void enQueue( QUEUE *queue, Int value)$/
+error_bound	las1.c	/^void error_bound(long *enough, double endl, double/
+free_ivector	sort2.c	/^static void free_ivector(int *v, long nl, long nh)/
+fsign	las1.c	/^double fsign(double a,double b)$/
+gasdev	gasdev.c	/^float gasdev(long *idum)$/
+idamax	las1.c	/^long idamax(long n,double *dx,long incx)$/
+imax	las1.c	/^long imax(long a,long b)$/
+imin	las1.c	/^long imin(long a, long b)$/
+imtql2	las1.c	/^void imtql2(long nm, long n, double d[], double e[/
+imtqlb	las1.c	/^void imtqlb(long n, double d[], double e[], double/
+ivector	sort2.c	/^static int *ivector(long nl, long nh)$/
+lanczos_step	las1.c	/^void lanczos_step(long n, long first, long last, d/
+landr	las1.c	/^long landr(long n, long lanmax, long maxprs, long /
+lanso	las1.c	/^void lanso(long n, long lanmax, long maxprs, doubl/
+las1	las1.c	/^void las1(char *in1, char *in2, char *out1, char */
+machar	las1.c	/^void machar(long *ibeta, long *it, long *irnd, lon/
+nrerror	sort2.c	/^static void nrerror(const char *msg)$/
+opb	las1.c	/^void opb(long n,double *x, double *y)$/
+ortbnd	las1.c	/^void ortbnd(double *alf, double *eta, double *olde/
+perr	Error.c	/^void perr(const char *fmt, ...)$/
+prbool	Input.c	/^#define  prbool(x) ((x)? "TRUE": "FALSE")$/
+printinfo	Input.c	/^static void printinfo(Bool tofile)$/
+prnetgentype	Input.c	/^#define  prnetgentype(x) ((x==0)? "FITNESS": "BA")/
+prnettype	Input.c	/^#define  prnettype(x) ((x)? "DIRECTED": "UNDIRECTE/
+purge	las1.c	/^void purge(long n, long ll, double *r, double *q, /
+pythag	las1.c	/^double pythag(double a, double b)$/
+ran1	ran1.c	/^float ran1(long *idum)$/
+random2	las1.c	/^static double random2(long *iy)$/
+ritvec	las1.c	/^void ritvec(long n, double kappa, double *ritz, do/
+sNode	main.h	/^struct sNode {$/
+sort2	sort2.c	/^void sort2(unsigned long n, Real *arr, Real *brr)$/
+sortfn	DegreeDistrib.c	/^static int sortfn( const Real * a, const Real * b)/
+startv	las1.c	/^double startv(long n, double *wptr[])$/
+store	las1.c	/^void store(long n, long isw, long j, double *s)$/
+stpone	las1.c	/^void stpone(long n, double *wrkptr[])$/
+write_data	las1.c	/^void write_data(long lanmax, long maxprs, double e/

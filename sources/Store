@@ -1,0 +1,26 @@
+#! /bin/tcsh
+
+set destdir = "/home/servedio/Storage"
+if(-d $destdir) then 
+
+    set a = `date +NET_%y.%m.%d`
+
+    set d  = sources
+    set qt = Qt
+
+    echo "Creating $a.tgz"
+    cd ..
+    tar -chzf $a.tgz \
+		README AUTHORS INSTALL COPYING MANUAL configure Makefile \
+		$d/{*.[cfh],Makefile,Store,*.pl} \
+		$qt/{*.cpp,*.ui,*.h,*.pro}
+
+    echo "Moving $a.tgz to $destdir"
+    mv -f $a.tgz $destdir
+
+    if(-e "NET.tgz") then
+	rm NET.tgz
+    endif
+    cp $destdir/$a.tgz $destdir/NET.tgz
+
+endif
